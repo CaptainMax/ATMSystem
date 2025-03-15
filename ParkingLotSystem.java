@@ -101,7 +101,7 @@ class ParkingSpot {
 
 // singleton
 class ParkingLot {
-    private static ParkingLot instance;
+    private static volatile ParkingLot instance;
     private final List<ParkingSpot> carSpots;
     private final List<ParkingSpot> bikeSpots;
     private final int carCapacity;
